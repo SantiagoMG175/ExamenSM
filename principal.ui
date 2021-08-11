@@ -102,6 +102,10 @@
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(132, 182, 244);
+color: rgb(0, 0, 0);</string>
+            </property>
             <property name="text">
              <string>Generar</string>
             </property>
@@ -161,7 +165,7 @@
           <item row="0" column="2" rowspan="3">
            <widget class="QWidget" name="inFoto" native="true">
             <property name="styleSheet">
-             <string notr="true">image: url(:/recursos/recursos/dieta.png);</string>
+             <string notr="true">image: url(:/recursos/recursos/peso.png);</string>
             </property>
            </widget>
           </item>
@@ -175,20 +179,6 @@
            <widget class="QLabel" name="IMC">
             <property name="text">
              <string>IMC(Kg/m2): </string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QLabel" name="imc1">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2" rowspan="2">
-           <widget class="QWidget" name="widget_6" native="true">
-            <property name="styleSheet">
-             <string notr="true">image: url(:/recursos/recursos/informe-medico.png);</string>
             </property>
            </widget>
           </item>
@@ -208,6 +198,27 @@
             </property>
            </widget>
           </item>
+          <item row="0" column="2" rowspan="2">
+           <widget class="QWidget" name="widget_6" native="true">
+            <property name="styleSheet">
+             <string notr="true">image: url(:/recursos/recursos/informe-medico.png);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="outIMC">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Estado:</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
@@ -221,23 +232,21 @@
             </property>
            </widget>
           </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="cmdDatos">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(247, 202, 228);
+color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string>Visualizar Datos</string>
+            </property>
+           </widget>
+          </item>
           <item row="0" column="1">
            <widget class="QLabel" name="outAlturaA">
             <property name="text">
              <string>.0cm</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <widget class="QWidget" name="widget_7" native="true">
-            <property name="font">
-             <font>
-              <family>Old English Text MT</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">image: url(:/recursos/recursos/limite-de-altura.png);</string>
             </property>
            </widget>
           </item>

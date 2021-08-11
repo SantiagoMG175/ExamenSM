@@ -4,5 +4,7 @@
         <file>recursos/dieta.png</file>
         <file>recursos/informe-medico.png</file>
         <file>recursos/limite-de-altura.png</file>
+        <file>recursos/imc.png</file>
+        <file>recursos/peso.png</file>
     </qresource>
 </RCC>

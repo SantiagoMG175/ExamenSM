@@ -10,13 +10,16 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    principal.cpp
+    principal.cpp \
+    tabla.cpp
 
 HEADERS += \
-    principal.h
+    principal.h \
+    tabla.h
 
 FORMS += \
-    principal.ui
+    principal.ui \
+    tabla.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
