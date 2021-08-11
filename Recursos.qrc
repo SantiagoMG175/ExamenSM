@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/recursos">
+        <file>recursos/escala.png</file>
+        <file>recursos/dieta.png</file>
+        <file>recursos/informe-medico.png</file>
+        <file>recursos/limite-de-altura.png</file>
+    </qresource>
+</RCC>

@@ -26,18 +26,16 @@ public:
     float calcular();
     void validacion();
     void limpiarDatos();
-
-
+    void altura();
 
 private slots:
-
-
     void on_cmdGenerar_pressed();
 
 private:
     Ui::Principal *ui;
-
-
+    QString m, h;
+    float mf, hf;
+    float imc;
 
 
 };

@@ -16,9 +16,6 @@ Principal::~Principal()
 float Principal::calcular()
 {
 
-    float imc;
-    QString m, h, altura;
-    float mf, hf;
 
     h=ui->inAltura->text();
     m=ui->inPeso->text();
@@ -38,9 +35,6 @@ float Principal::calcular()
        ui->outEstado->setText("Obesidad");
      }
 
-
-      altura = hf*100;
-      ui->outPActual->setText(altura);
 
  return imc;
 
@@ -63,6 +57,19 @@ void Principal::limpiarDatos()
      ui->inPeso->setText("");
 }
 
+void Principal::altura()
+
+{
+
+   hf=h.toFloat() * 100;
+
+  ui->outAlturaA->setText(QString::number(hf)+".0 cm");
+
+
+
+}
+
+
 
 
 void Principal::on_cmdGenerar_pressed()
@@ -75,4 +82,5 @@ void Principal::on_cmdGenerar_pressed()
     ui->outMin->setText(ui->inPeso->text());
 
     limpiarDatos();
+    altura();
 }

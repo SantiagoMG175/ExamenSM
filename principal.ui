@@ -13,18 +13,34 @@
   <property name="windowTitle">
    <string>Principal</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="Recursos.qrc">
+    <normaloff>:/recursos/recursos/escala.png</normaloff>:/recursos/recursos/escala.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QWidget" name="widget" native="true">
+      <property name="font">
+       <font>
+        <family>Segoe UI Historic</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QWidget" name="widget_5" native="true">
          <layout class="QGridLayout" name="gridLayout">
-          <item row="0" column="0">
-           <widget class="QLabel" name="label">
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="inAltura">
+            <property name="toolTip">
+             <string/>
+            </property>
             <property name="text">
-             <string>Ingrese su altura en metros:   </string>
+             <string/>
+            </property>
+            <property name="maxLength">
+             <number>4</number>
             </property>
            </widget>
           </item>
@@ -41,10 +57,30 @@
             </property>
            </spacer>
           </item>
+          <item row="1" column="0" rowspan="2">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Ingrese su peso en kilogramos:</string>
+            </property>
+           </widget>
+          </item>
           <item row="2" column="1">
            <widget class="QLineEdit" name="inPeso">
+            <property name="toolTip">
+             <string>asd</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
             <property name="maxLength">
-             <number>4</number>
+             <number>5</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Ingrese su altura en metros:   </string>
             </property>
            </widget>
           </item>
@@ -61,24 +97,13 @@
             </property>
            </spacer>
           </item>
-          <item row="0" column="1">
-           <widget class="QLineEdit" name="inAltura">
-            <property name="maxLength">
-             <number>4</number>
-            </property>
-           </widget>
-          </item>
           <item row="3" column="0">
            <widget class="QPushButton" name="cmdGenerar">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
             <property name="text">
              <string>Generar</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0" rowspan="2">
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>Ingrese su peso en kilogramos:</string>
             </property>
            </widget>
           </item>
@@ -87,25 +112,21 @@
        </item>
        <item>
         <widget class="QWidget" name="widget_2" native="true">
+         <property name="toolTip">
+          <string extracomment="asdasd"/>
+         </property>
          <layout class="QGridLayout" name="gridLayout_4">
+          <item row="1" column="1">
+           <widget class="QLabel" name="outMax">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
           <item row="1" column="0">
            <widget class="QLabel" name="PMax">
             <property name="text">
              <string>Peso Max:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="PMin">
-            <property name="text">
-             <string>Peso Min:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="PActual">
-            <property name="text">
-             <string>Actual:</string>
             </property>
            </widget>
           </item>
@@ -116,10 +137,10 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QLabel" name="outMax">
+          <item row="2" column="0">
+           <widget class="QLabel" name="PMin">
             <property name="text">
-             <string/>
+             <string>Peso Min:</string>
             </property>
            </widget>
           </item>
@@ -127,6 +148,20 @@
            <widget class="QLabel" name="outMin">
             <property name="text">
              <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="PActual">
+            <property name="text">
+             <string>Actual:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" rowspan="3">
+           <widget class="QWidget" name="inFoto" native="true">
+            <property name="styleSheet">
+             <string notr="true">image: url(:/recursos/recursos/dieta.png);</string>
             </property>
            </widget>
           </item>
@@ -150,8 +185,24 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
+          <item row="0" column="2" rowspan="2">
+           <widget class="QWidget" name="widget_6" native="true">
+            <property name="styleSheet">
+             <string notr="true">image: url(:/recursos/recursos/informe-medico.png);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
            <widget class="QLabel" name="outEstado">
+            <property name="font">
+             <font>
+              <family>Yu Gothic UI Semibold</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -164,23 +215,29 @@
         <widget class="QWidget" name="widget_4" native="true">
          <layout class="QGridLayout" name="gridLayout_3">
           <item row="0" column="0">
-           <widget class="QLabel" name="label_7">
+           <widget class="QLabel" name="inAlturaActual">
             <property name="text">
-             <string>Altura:</string>
+             <string>Altura actual:</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_8">
+          <item row="0" column="1">
+           <widget class="QLabel" name="outAlturaA">
             <property name="text">
-             <string>Actual:</string>
+             <string>.0cm</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QLabel" name="outPActual">
-            <property name="text">
-             <string/>
+          <item row="0" column="2">
+           <widget class="QWidget" name="widget_7" native="true">
+            <property name="font">
+             <font>
+              <family>Old English Text MT</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/recursos/recursos/limite-de-altura.png);</string>
             </property>
            </widget>
           </item>
@@ -194,6 +251,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="Recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>
