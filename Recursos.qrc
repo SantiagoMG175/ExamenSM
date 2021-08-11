@@ -6,5 +6,6 @@
         <file>recursos/limite-de-altura.png</file>
         <file>recursos/imc.png</file>
         <file>recursos/peso.png</file>
+        <file>recursos/estadisticas.png</file>
     </qresource>
 </RCC>
