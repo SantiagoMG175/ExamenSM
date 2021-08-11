@@ -21,10 +21,15 @@ FORMS += \
     principal.ui \
     tabla.ui
 
+TRANSLATIONS += \
+    examen_santiago_mino_es_EC.ts \
+    examen_santiago_mino_it_IT.ts
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    Recursos.qrc
+    Recursos.qrc \
+    recursos2.qrc

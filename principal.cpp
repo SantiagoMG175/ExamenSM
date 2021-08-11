@@ -104,7 +104,6 @@ void Principal::on_cmdDatos_released()
     tabla->show();
     tabla->escribir(datos());
 
-
 }
 
 QString Principal::getH() const

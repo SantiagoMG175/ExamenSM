@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/traducciones">
+        <file>examen_santiago_mino_es_EC.qm</file>
+        <file>examen_santiago_mino_it_IT.qm</file>
+    </qresource>
+</RCC>

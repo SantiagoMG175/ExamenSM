@@ -13,14 +13,10 @@ Tabla::~Tabla()
     delete ui;
 }
 
-
-
 void Tabla::escribir(QString data)
 {
 
     ui->outDatos->setText(data);
-
-
 
 }
 
